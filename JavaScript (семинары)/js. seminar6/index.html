@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<div id="block">
+
+</div> 
+<p class ="www">1</p>
+<p class="www">2</p> 
+<a href="#" class="link">text html</a>
+<img src="" alt="" class="photo"> 
+<div class="content"></div>  
+
+
+
+
+<script> 
+/*const content = document.querySelector(`.content`);
+    const pr = document.createElement('p'); 
+    pr.textContent = `новый текст` 
+    content.appendChild(pr); // Добавьте созданный элемент внутри <div class="content"></div> 
+    pr.remove(); */ 
+
+const content = document.querySelector('.content');
+
+const buttonEl = document.createElement('button');
+content.appendChild(buttonEl);
+buttonEl.textContent = 'Push';
+let count = 0;
+buttonEl.onclick = function () {
+console.log(++count);
+}
+
+</script>
+
+
+
+<script src="doc.js"></script>
+
+  
+</body>
+</html>

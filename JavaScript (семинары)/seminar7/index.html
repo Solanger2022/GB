@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style> 
+    .headings {
+        color : white; 
+text-transform: uppercase; 
+background-color: aquamarine;
+text-align: center;
+    }
+    </style>
+</head>
+<body> 
+    <div class="content"></div>
+   <script>
+const content = document.querySelector('.content'); // поймать нужный элемент  
+const h1El = document.createElement(`h1`); // создать параграф
+h1El.textContent = `Привет`; // добавить текст в парграф 
+//h1El.style.backgroundColor = `#ccc`; 
+//h1El.style.textAlign = 'center';
+h1El.setAttribute(`class`, 'headings'); // подключение стилей - класс, название 
+//добавление фото
+const imgEl = document.createElement (`img`); 
+imgEl.src = `https://` ; 
+imgEl.setAttribute('alt',`фото`);
+
+
+
+h1El = appendChild(h1El); // добавить в контент дочерний элемент 
+imgEl = appendChild(imgEl); 
+
+
+
+   </script> 
+</body>
+</html>

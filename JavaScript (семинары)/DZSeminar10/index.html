@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content"></div> 
+<script src="data.js"></script> 
+<script> 
+
+const contentEl = document.querySelector(".content");
+      const data = JSON.parse(optionData); 
+      console.log(data);  
+
+
+      data.forEach(element => {
+        const contentEl = document.querySelector(".content"); 
+        const idElement = document.createElement("h1"); 
+        idElement.classList.add("id");
+        idElement.textContent = element.id; 
+        console.log(idElement);
+         
+        const titleElement = document.createElement("p"); 
+        titleElement.classList.add("full_name");
+        titleElement.textContent = element.full_name; 
+        console.log(titleElement); 
+
+        const imgElement = document.createElement("img");
+        imgElement.classList.add("img_src"); 
+        imgElement.textContent = element.img_src; 
+        console.log(imgElement);
+        }); 
+
+
+
+
+
+
+
+
+
+</script>
+
+</body> 
+</html>

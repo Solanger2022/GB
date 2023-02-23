@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+ <script src="data.js"></script> 
+
+    <script>
+    const data = JSON.parse(dataProducts); 
+
+    data.forEach(element =>{
+const flexboxEl = document.querySelector(".flex-box"); 
+const contentEl = document.createElement('div'); 
+contentEl.classList.add('content');
+flexboxEl.appendChild(contentEl); 
+
+const productsImgEl = document.createElement('div'); 
+productsImgEl.classList.add('products-image'); 
+flexboxEl.appendChild(productsImgEl); 
+
+const imageEl = document.createElement('img'); 
+imageEl.classList.add('image');
+imageEl.src = element.image; 
+flexboxEl.appendChild(imageEl); 
+
+const itemEl = document.createElement('div'); 
+itemEl.classList.add('item');
+flexboxEl.appendChild(imageEl); 
+
+nameEl = document.createElement('h2'); 
+nameEl.classList.add('name'); 
+nameEl.textContent = element.name; 
+flexboxEl.appendChild(nameEl); 
+
+descriptionEl = document.createElement('p'); 
+descriptionEl.classList.add('description');
+descriptionEl.textContent = element.description; 
+flexboxEl.appendChild(descriptionEl); 
+
+const priceEl = document.createElement('p'); 
+priceEl.classList.add('price'); 
+priceEl.textContent ="$" + element.price; 
+flexboxEl.appendChild(priceEl); 
+
+
+
+    })
+ </script>
+ 
+ 
+ 
+
+<!--<div class="flex-box">
+     <div class="content">
+    <div class="image"><img src="photo1.png" alt=""></div> 
+<div class="item">
+    <h2 class="name">ELLERY X M'O CAPSULE</h2> 
+    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p> 
+    <p class="price">Price: <span class="price_color">$52</span></p>
+</div>
+ </div>   
+
+
+<div class="content">
+    <div class="image"><img src="photo2.png" alt=""></div> 
+<div class="item">
+    <h2 class="name">ELLERY X M'O CAPSULE</h2> 
+    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p> 
+    <p class="price">Price: <span class="price_color">$52</span></p>
+</div>
+ </div>   
+
+ <div class="content">
+    <div class="image"><img src="photo3.png" alt=""></div> 
+<div class="item">
+    <h2 class="name">ELLERY X M'O CAPSULE</h2> 
+    <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p> 
+    <p class="price">Price: <span class="price_color">$52</span></p>
+</div>
+ </div>   
+</div> 
+
+
+<div class="flex-box">
+    <div class="content">
+   <div class="image"><img src="photo4.png" alt=""></div> 
+<div class="item">
+   <h2 class="name">ELLERY X M'O CAPSULE</h2> 
+   <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p> 
+   <p class="price">Price: <span class="price_color">$52</span></p>
+</div>
+</div>   
+
+
+<div class="content">
+   <div class="image"><img src="photo5.png" alt=""></div> 
+<div class="item">
+   <h2 class="name">ELLERY X M'O CAPSULE</h2> 
+   <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p> 
+   <p class="price">Price: <span class="price_color">$52</span></p>
+</div>
+</div>   
+
+<div class="content">
+   <div class="image"><img src="photo6.png" alt=""></div> 
+<div class="item">
+   <h2 class="name">ELLERY X M'O CAPSULE</h2> 
+   <p class="description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p> 
+   <p class="price">Price: <span class="price_color">$52</span></p>
+</div>
+</div>  
+</div> --> 
+
+
+
+</body>
+</html>

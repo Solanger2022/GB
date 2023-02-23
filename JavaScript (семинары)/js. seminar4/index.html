@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+/*Создайте массив с элементами 1, 2, 3. Выведите на экран каждый из этих элементов.
+Создайте массив с произвольными элементами. Выведите на экран количество элементов в этом массиве.
+Создайте массив с элементами 'a', 'b', 'c'. Запишите вместо первого элемента число 1, вместо второго - 2, вместо третьего - 3.*/ 
+
+/*const arr = [1, 2, 3];
+
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+
+for (let i = 0; i < arr.length; i++) {
+const element = arr[i];
+console.log(element);
+}
+
+console.log(arr.length);
+
+const arrText = ['a', 'b', 'c'];
+arrText[0] = 1;
+arrText[1] = -2;
+arrText[2] = -3;
+console.log(arrText); */ 
+
+// С помощью цикла for выведите в консоль числа от 11 до 33.
+const arrFirst = [];
+for (let i = 11; i <= 33; i++) {
+arrFirst.push(i);
+}
+console.log(arrFirst);
+
+
+// С помощью цикла for выведите в консоль нечетные числа в промежутке от 1 до 99.
+const arrSecond = [];
+for (let i = 1; i <= 99; i++) {
+
+if (i % 2) {
+// !(i % 2)
+arrSecond.push(i);
+}
+}
+console.log(arrSecond);
+
+
+// С помощью цикла for выведите в консоль числа от 100 до 0.
+const arrThird = [];
+
+for (let i = 100; i >= 0; i--) {
+// console.log(i);
+arrThird.push(i);
+}
+console.log(arrThird);
+
+// Дано число num с неким начальным значением. Умножайте его на 3 столько раз, пока результат умножения не станет больше 1000. Какое число получится? Посчитайте количество итераций, необходимых для этого.
+
+/*let num = 2;
+let i = 0;
+while (num < 1000) {
+num *= 3;
+i++;
+}
+
+console.log(`количество итераций ${i}`); */ 
+
+let sum = 0;
+// for (let i = 2; i <= 100; i = i + 2) {
+// sum += i ;
+// }
+// console.log(sum);
+const arr = [2, 5, 9, 15, 1, 4];
+for (let i = 0; i < arr.length; i++) {
+const element = arr[i];
+if (element <= 10 && element >= 3) {
+console.log(element);
+}
+}
+let sum = 0;
+for (let i = 2; i <= 100; i += 2) {
+sum += i;
+}
+console.log(sum);
+let sumNew = 0;
+const arrNew = [2, 5, 9, 3, 1, 4];
+for (let i = 0; i < arrNew.length; i++) {
+const element = arrNew[i];
+sumNew += element;
+}
+
+console.log(sumNew);
+let text = '-';
+for (let i = 1; i <= 9; i++) {
+text += i + '-';
+}
+console.log(text);
+
+const arrLast = [2, 5, 9, 0, 3, 1, 4];
+
+for (let i = 0; i < arrLast.length; i++) {
+const element = arrLast[i];
+console.log(element);
+if (element === 0) {
+break;
+}
+}
+
+
+
+
+    </script>
+</body>
+</html>
